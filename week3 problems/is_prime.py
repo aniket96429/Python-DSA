@@ -10,5 +10,3 @@ if is_prime:
 
 else:
     print("No, it is not a prime number")
-
-print("Hello")
