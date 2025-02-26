@@ -1,5 +1,5 @@
 """
-Ask a number =  
+Ask a number from user =  
 
 Yes
 No
