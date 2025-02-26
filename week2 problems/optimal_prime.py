@@ -6,17 +6,13 @@ No
 """
 
 num = int(input("Enter a number = "))
-count = 0
+is_prime = True
 
-for i in range(1, int(num**0.5) + 1):
+for i in range(2, int(num**0.5) + 1):
     if num % i == 0:
-        count += 1
-        if num // i != i:
-            count += 1
-            if count > 2:
-                break
+        is_prime = False
 
-if count == 2:
+if is_prime:
     print("Yes, it is a prime number")
 
 else:

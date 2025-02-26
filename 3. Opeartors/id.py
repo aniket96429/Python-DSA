@@ -5,6 +5,7 @@ print(f"id(a) = {id(a)}")
 print(f"b = {b}")
 print(f"id(b) = {id(b)}")
 
+print("Hello")
 
 b = 10
 print(f"b = {b}")
