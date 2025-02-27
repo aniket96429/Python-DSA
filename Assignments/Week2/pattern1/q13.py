@@ -16,7 +16,6 @@ Program to print the pattern
 n = int(input("Enter the number: "))
 
 if n == 0:
-    print(0)
     exit()
 
 for i in range(n // 2 + 1, 0, -1):
