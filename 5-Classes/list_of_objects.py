@@ -40,6 +40,11 @@ class Student:
             self.marks.append(mark)
         print("Marks are update successfully.\n")
 
+    def check_roll_no(self, roll):
+        if self.roll_no == roll:
+            return True
+        return False
+
 
 all_students: List[Student] = []
 
@@ -64,7 +69,7 @@ while True:
         is_present = False
         roll = int(input("Enter the roll no of student whose name will be update: "))
         for st in all_students:
-            if roll == st.roll_no:
+            if st.check_roll_no(roll):
                 name = input("Enter the update name: ")
                 st.update_name(name)
                 is_present = True
@@ -77,7 +82,7 @@ while True:
             input("Enter the roll no of student whose marks will be displayed: ")
         )
         for st in all_students:
-            if roll == st.roll_no:
+            if st.check_roll_no(roll):
                 st.display_marks()
                 is_present = True
                 break
@@ -87,7 +92,7 @@ while True:
         is_present = False
         roll = int(input("Enter the roll no of student whose name will be update: "))
         for st in all_students:
-            if roll == st.roll_no:
+            if st.check_roll_no(roll):
                 st.update_marks()
                 is_present = True
                 break
