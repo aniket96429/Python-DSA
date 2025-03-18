@@ -73,7 +73,9 @@ while True:
             print("\nStudent not present. Please enter valid roll no")
     elif choice == 4:
         is_present = False
-        roll = int(input("Enter the roll no of student whose name will be update: "))
+        roll = int(
+            input("Enter the roll no of student whose marks will be displayed: ")
+        )
         for st in all_students:
             if roll == st.roll_no:
                 st.display_marks()
