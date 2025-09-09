@@ -18,11 +18,11 @@ if n == 0:
 sum = 1
 for i in range(1, n + 1):
     if i % 2 != 0:
-        for j in range(1, i + 1):
-            print(sum, end=" ")
-            sum += 1
+        for j in range(sum, sum + i):
+            print(j, end=" ")
+        sum += i
     else:
-        sum = sum + i
-        for k in range(sum - 1, sum - i - 1, -1):
+        for k in range(sum + i - 1, sum - 1, -1):
             print(k, end=" ")
+        sum += i
     print()
